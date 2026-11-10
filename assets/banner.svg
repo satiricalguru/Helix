@@ -14,24 +14,15 @@
       <stop offset="50%" stop-color="#0e3a39" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#1a2e30" stop-opacity="0.1"/>
     </linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#2ec4bd" stroke-width="0.5" opacity="0.05"/>
-      <circle cx="0" cy="0" r="1" fill="#5fe0d4" opacity="0.15"/>
-    </pattern>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="12" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
   </defs>
 
   <!-- Background container -->
   <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
   <rect width="1280" height="340" rx="20" stroke="url(#borderGrad)" stroke-width="1.5"/>
-  <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
 
   <!-- Radial atmospheric glows -->
-  <circle cx="1120" cy="90" r="240" fill="#2ec4bd" opacity="0.07" filter="url(#glow)"/>
-  <circle cx="180" cy="270" r="180" fill="#e0c88a" opacity="0.04" filter="url(#glow)"/>
+  <circle cx="1120" cy="90" r="240" fill="#2ec4bd" opacity="0.08"/>
+  <circle cx="180" cy="270" r="180" fill="#e0c88a" opacity="0.05"/>
 
   <!-- Helix Large Glyphs in Background -->
   <g transform="translate(980, 50) scale(3.5)" opacity="0.12">
@@ -51,12 +42,12 @@
 
     <!-- Subtitle / Tagline -->
     <text x="0" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="22" font-weight="400" fill="#c3d4d2">
-      Anthropic-Compatible Gateway <tspan fill="#5fe0d4">+</tspan> Higgsfield-Backed MCP Generation Server
+      Anthropic-Compatible Gateway + Higgsfield-Backed MCP Generation Server
     </text>
 
     <!-- Capabilities strip -->
     <text x="0" y="246" font-family="'JetBrains Mono', Menlo, monospace" font-size="13" font-weight="500" fill="#7ba3a1" letter-spacing="0.5">
-      Fable 5.2 Messages API &nbsp;•&nbsp; Streamable MCP &nbsp;•&nbsp; Local Model Routing &nbsp;•&nbsp; Video &amp; Image Studio
+      Fable 5.2 Messages API &bull; Streamable MCP &bull; Local Model Routing &bull; Video &amp; Image Studio
     </text>
   </g>
 </svg>

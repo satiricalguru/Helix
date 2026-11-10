@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" alt="Helix Minimalistic Logo" width="112" height="112" />
+<img src="assets/logo.png" alt="Helix Minimalistic Logo" width="112" height="112" />
 
 # Helix
 
@@ -27,7 +27,7 @@
 ---
 
 <p align="center">
-  <img src="assets/banner.svg" alt="Helix Banner" width="100%" />
+  <img src="assets/banner.png" alt="Helix Banner" width="100%" />
 </p>
 
 <p align="center">
