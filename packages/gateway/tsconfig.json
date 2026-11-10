@@ -1,0 +1,30 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../config"
+    },
+    {
+      "path": "../contracts"
+    },
+    {
+      "path": "../hf-client"
+    },
+    {
+      "path": "../local-adapter"
+    },
+    {
+      "path": "../quota"
+    },
+    {
+      "path": "../mcp-client"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+FROM node:24-alpine AS build
+WORKDIR /app
+RUN corepack enable
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml* tsconfig*.json ./
+COPY packages ./packages
+COPY apps ./apps
+RUN pnpm install --no-frozen-lockfile && pnpm build
+
+FROM node:24-alpine
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=build /app ./
+EXPOSE 4001
+CMD ["node", "packages/mcp-server/dist/main.js"]

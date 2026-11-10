@@ -1,0 +1,46 @@
+{
+  "title": "Descent",
+  "model": "seedance_2_5",
+  "resolution": "1080p",
+  "aspectRatio": "16:9",
+  "masterStyle": "Photorealistic nature cinematography, shot on a cinema camera with an anamorphic macro lens. One single continuous unbroken camera move, no cuts, no text, no people, no logos, no UI. Physically accurate light, real dew refraction, subsurface scattering in leaves, shallow depth of field with natural focus pulls, subtle handheld micro-motion, 24fps filmic motion blur. Forest palette: deep greens, earthy browns, soft gold sunlight, restrained highlights. Cave palette: turquoise, emerald, cyan crystal light against dark warm stone. No morphing, no warping, no flickering, no cartoon or CGI look.",
+  "generatedAt": "2026-11-10T21:05:17.010Z",
+  "clips": [
+    {
+      "index": 1,
+      "title": "The forest",
+      "seconds": 12,
+      "prompt": "Photorealistic nature cinematography, shot on a cinema camera with an anamorphic macro lens. One single continuous unbroken camera move, no cuts, no text, no people, no logos, no UI. Physically accurate light, real dew refraction, subsurface scattering in leaves, shallow depth of field with natural focus pulls, subtle handheld micro-motion, 24fps filmic motion blur. Forest palette: deep greens, earthy browns, soft gold sunlight, restrained highlights. Cave palette: turquoise, emerald, cyan crystal light against dark warm stone. No morphing, no warping, no flickering, no cartoon or CGI look. Dawn in an untouched old-growth forest. The camera starts wide, low and slow, drifting forward just above the forest floor. Enormous trees, volumetric god rays through light mist, drifting pollen glittering in the beams. Grass and tiny wildflowers sway in a gentle breeze, moss on roots, dew on every blade. A small butterfly crosses very close to the lens. The camera descends steadily toward a patch of tall grass, with smooth ease-in acceleration. Ends with the lens sinking into the grass line, blades filling the frame edges. Audio: wind and birdsong, fading into deep reverb, dripping water and a soft low synth pad in the cave, a waterfall roar swelling at the reveal.",
+      "status": "failed",
+      "urls": [],
+      "message": "Error starting generation: Requires plus plan or higher."
+    },
+    {
+      "index": 2,
+      "title": "Into the grass",
+      "seconds": 12,
+      "prompt": "Photorealistic nature cinematography, shot on a cinema camera with an anamorphic macro lens. One single continuous unbroken camera move, no cuts, no text, no people, no logos, no UI. Physically accurate light, real dew refraction, subsurface scattering in leaves, shallow depth of field with natural focus pulls, subtle handheld micro-motion, 24fps filmic motion blur. Forest palette: deep greens, earthy browns, soft gold sunlight, restrained highlights. Cave palette: turquoise, emerald, cyan crystal light against dark warm stone. No morphing, no warping, no flickering, no cartoon or CGI look. Continue from the previous frame. Macro scale: the camera glides forward and downward between giant grass blades that tower overhead like columns. Dew droplets with real reflections of the sky, one droplet rolls slowly down a blade. The camera slips between two enormous overlapping leaves, tiny insects and spores drifting through shafts of light, soil grains and roots visible below. Deep shallow focus, foreground blades blur past. The ground opens ahead into a dark, mossy gap in the earth. Ends facing the cave mouth. Audio: wind and birdsong, fading into deep reverb, dripping water and a soft low synth pad in the cave, a waterfall roar swelling at the reveal.",
+      "status": "failed",
+      "urls": [],
+      "message": "Error starting generation: Requires plus plan or higher."
+    },
+    {
+      "index": 3,
+      "title": "Threshold",
+      "seconds": 10,
+      "prompt": "Photorealistic nature cinematography, shot on a cinema camera with an anamorphic macro lens. One single continuous unbroken camera move, no cuts, no text, no people, no logos, no UI. Physically accurate light, real dew refraction, subsurface scattering in leaves, shallow depth of field with natural focus pulls, subtle handheld micro-motion, 24fps filmic motion blur. Forest palette: deep greens, earthy browns, soft gold sunlight, restrained highlights. Cave palette: turquoise, emerald, cyan crystal light against dark warm stone. No morphing, no warping, no flickering, no cartoon or CGI look. Continue from the previous frame. The camera moves through a narrow mossy opening between roots and stone. Warm sunlight behind us fades as the lens enters shadow, then faint turquoise glow appears ahead: bioluminescent moss on wet rock, glowing spores floating upward, crystals embedded in the walls lighting up one after another as the camera passes. Water drips and shimmers on stone. Exposure adapts like a real camera, brightening slowly toward the glow. Ends at the edge of an opening into a vast space. Audio: wind and birdsong, fading into deep reverb, dripping water and a soft low synth pad in the cave, a waterfall roar swelling at the reveal.",
+      "status": "failed",
+      "urls": [],
+      "message": "Error starting generation: Requires plus plan or higher."
+    },
+    {
+      "index": 4,
+      "title": "The reveal",
+      "seconds": 15,
+      "prompt": "Photorealistic nature cinematography, shot on a cinema camera with an anamorphic macro lens. One single continuous unbroken camera move, no cuts, no text, no people, no logos, no UI. Physically accurate light, real dew refraction, subsurface scattering in leaves, shallow depth of field with natural focus pulls, subtle handheld micro-motion, 24fps filmic motion blur. Forest palette: deep greens, earthy browns, soft gold sunlight, restrained highlights. Cave palette: turquoise, emerald, cyan crystal light against dark warm stone. No morphing, no warping, no flickering, no cartoon or CGI look. Continue from the previous frame. The camera glides out of the tunnel and rises into an immense, luminous cavern, the climax of the film. Towering rock formations, translucent crystal clusters glowing cyan and emerald, bioluminescent flowers opening in clusters, glowing turquoise moss on every ledge, an underground waterfall crashing into crystal-clear water with fine mist, ripples and splashes, reflections on wet stone, thousands of tiny luminous particles floating in the air. The camera pulls back and tilts up slowly to reveal the full scale of the cave. Awe, bright and magical, not dark or frightening. Hold the final wide frame for the last second. Audio: wind and birdsong, fading into deep reverb, dripping water and a soft low synth pad in the cave, a waterfall roar swelling at the reveal.",
+      "status": "failed",
+      "urls": [],
+      "message": "Error starting generation: Requires plus plan or higher."
+    }
+  ]
+}

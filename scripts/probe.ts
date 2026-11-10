@@ -1,0 +1,14 @@
+import { readFile } from "node:fs/promises";
+import { McpClient } from "@helix/mcp-client";
+const tok = JSON.parse(await readFile(process.env.HOME + "/.config/helix/higgsfield-token.json", "utf8"));
+const c = new McpClient({ url: "https://mcp.higgsfield.ai/mcp", token: tok.access_token, protocolVersion: "2026-07-28", timeoutMs: 90000, retryAttempts: 5 });
+const id = { name: "helix", title: "Helix" };
+const bal = await c.callTool("balance", {}, { clientInfo: id });
+console.log("balance:", JSON.stringify(bal.structuredContent));
+const me = await c.callTool("models_explore", { action: "get", model_id: "seedance_2_5" }, { clientInfo: id });
+const item = me.structuredContent as any;
+console.log("unlim:", JSON.stringify(item?.unlim), "| supports_unlim:", item?.supports_unlim);
+const pl = await c.callTool("show_plans_and_credits", { intent: "trial" }, { clientInfo: id });
+const psc = pl.structuredContent as any;
+console.log("trial_status:", JSON.stringify(psc?.trial_status));
+console.log("unlim_trial_in_mcp_active:", psc?.unlim_trial_in_mcp_active);

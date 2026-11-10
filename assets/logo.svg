@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" fill="none">
+  <defs>
+    <linearGradient id="helixRibbon" x1="14" y1="16" x2="50" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5fe0d4"/>
+      <stop offset="50%" stop-color="#2ec4bd"/>
+      <stop offset="100%" stop-color="#12706f"/>
+    </linearGradient>
+    <linearGradient id="helixBg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a1214"/>
+      <stop offset="100%" stop-color="#030607"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Minimalist squircle container -->
+  <rect width="128" height="128" rx="28" fill="url(#helixBg)" stroke="#1a2e30" stroke-width="1.5"/>
+
+  <!-- Subtle ambient glow -->
+  <circle cx="64" cy="64" r="36" fill="#2ec4bd" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Helix glyph scaled to 128x128 (center scale 1.6x, offset x=12.8, y=12.8) -->
+  <g transform="translate(12.8, 12.8) scale(1.6)">
+    <!-- Main geometric ribbon -->
+    <path d="M14 16h7l11 22 11-22h7L36 50h-8z" fill="url(#helixRibbon)"/>
+    <!-- Top amber beacon / focus node -->
+    <circle cx="32" cy="14" r="3.4" fill="#e0c88a" filter="url(#glow)"/>
+    <!-- Inner accent highlight -->
+    <path d="M28 44l4-8 4 8h-8z" fill="#5fe0d4" opacity="0.4"/>
+  </g>
+</svg>

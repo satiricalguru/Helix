@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" width="1280" height="340" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071113"/>
+      <stop offset="60%" stop-color="#04090b"/>
+      <stop offset="100%" stop-color="#020405"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5fe0d4"/>
+      <stop offset="100%" stop-color="#12706f"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2ec4bd" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#0e3a39" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1a2e30" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#2ec4bd" stroke-width="0.5" opacity="0.05"/>
+      <circle cx="0" cy="0" r="1" fill="#5fe0d4" opacity="0.15"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background container -->
+  <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="20" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
+
+  <!-- Radial atmospheric glows -->
+  <circle cx="1120" cy="90" r="240" fill="#2ec4bd" opacity="0.07" filter="url(#glow)"/>
+  <circle cx="180" cy="270" r="180" fill="#e0c88a" opacity="0.04" filter="url(#glow)"/>
+
+  <!-- Helix Large Glyphs in Background -->
+  <g transform="translate(980, 50) scale(3.5)" opacity="0.12">
+    <path d="M14 16h7l11 22 11-22h7L36 50h-8z" fill="#5fe0d4"/>
+    <circle cx="32" cy="14" r="3.2" fill="#e0c88a"/>
+  </g>
+
+  <!-- Center-left typography -->
+  <g transform="translate(80, 0)">
+    <!-- Brand / Badges -->
+    <rect x="0" y="56" width="138" height="28" rx="14" fill="#0e2324" stroke="#2ec4bd" stroke-width="1"/>
+    <circle cx="16" cy="70" r="4" fill="#5fe0d4"/>
+    <text x="28" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="12" font-weight="600" fill="#5fe0d4" letter-spacing="1">HYBRID CORE</text>
+
+    <!-- Main Title -->
+    <text x="0" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="64" font-weight="800" fill="#ffffff" letter-spacing="-1">HELIX</text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="0" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="22" font-weight="400" fill="#c3d4d2">
+      Anthropic-Compatible Gateway <tspan fill="#5fe0d4">+</tspan> Higgsfield-Backed MCP Generation Server
+    </text>
+
+    <!-- Capabilities strip -->
+    <text x="0" y="246" font-family="'JetBrains Mono', Menlo, monospace" font-size="13" font-weight="500" fill="#7ba3a1" letter-spacing="0.5">
+      Fable 5.2 Messages API &nbsp;•&nbsp; Streamable MCP &nbsp;•&nbsp; Local Model Routing &nbsp;•&nbsp; Video &amp; Image Studio
+    </text>
+  </g>
+</svg>

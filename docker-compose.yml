@@ -1,0 +1,59 @@
+name: helix
+
+services:
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+    healthcheck:
+      test: ["CMD", "ollama", "list"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  gateway:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.gateway
+    env_file:
+      - .env
+    environment:
+      HELIX_REDIS_URL: redis://redis:6379
+      HELIX_LOCAL_BASE_URL: http://ollama:11434/v1
+    ports:
+      - "4000:4000"
+    depends_on:
+      redis:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+
+  mcp:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.mcp
+    env_file:
+      - .env
+    environment:
+      HELIX_REDIS_URL: redis://redis:6379
+    ports:
+      - "4001:4001"
+    depends_on:
+      redis:
+        condition: service_healthy
+
+volumes:
+  ollama:

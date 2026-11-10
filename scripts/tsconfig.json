@@ -1,0 +1,37 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "noEmit": true
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "../packages/config"
+    },
+    {
+      "path": "../packages/contracts"
+    },
+    {
+      "path": "../packages/gateway"
+    },
+    {
+      "path": "../packages/hf-client"
+    },
+    {
+      "path": "../packages/local-adapter"
+    },
+    {
+      "path": "../packages/mcp-client"
+    },
+    {
+      "path": "../packages/mcp-server"
+    },
+    {
+      "path": "../packages/quota"
+    }
+  ]
+}
