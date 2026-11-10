@@ -47,7 +47,7 @@
 
     <!-- Capabilities strip -->
     <text x="0" y="246" font-family="'JetBrains Mono', Menlo, monospace" font-size="13" font-weight="500" fill="#7ba3a1" letter-spacing="0.5">
-      Fable 5.2 Messages API &bull; Streamable MCP &bull; Local Model Routing &bull; Video &amp; Image Studio
+      Fable 5.2 Messages API • Streamable MCP • Local Model Routing • Video &amp; Image Studio
     </text>
   </g>
 </svg>
